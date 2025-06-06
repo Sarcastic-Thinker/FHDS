@@ -2,6 +2,9 @@ body{
      padding    : 0;
      margin     : 0;
      font-family: Helvetica;
+      margin-top: 50px;
+     background-image: url(photos/temple\ blur.jpeg);
+     background-size: 100%;
 }
 
 
