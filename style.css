@@ -198,3 +198,13 @@ a.info-box{
     padding-top: 1px;
     padding-bottom: 50px;
 }
+
+.contacts{
+      background-color : rgba(35, 138, 255, 0.8) ;
+      width   : 90%;
+      display : block;
+      margin  : auto;
+      margin-top : 45px;
+      padding    : 10px;
+      margin-bottom: 45px;
+}
