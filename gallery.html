@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet"  href="gallery-style.css">
+
+</head>
+<body>
+    <div id="tabs-top">
+        <a href="history.html">HISTORY</a>
+        <a href="index.html">HOME</a>
+        <a href="hall.html">HALL</a>
+    </div>
+    <div id="tabs-bottom">
+        <a href="feedback.html">FEEDBACK</a>
+        <a href="contact.html">CONTACT US</a>
+        <a href="prayers.html">UPCOMING PRAYERS</a>
+    </div>
+    <div class="logo">
+        <img src="photos/gallery logo.jpeg" alt="Gallery" width="device-width">
+    </div>
+    <!--gallery pictures-->
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">FHDS</div>
+            <img src="gallerypics/00.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+             <div class="numbertext">FHDS</div>
+            <img src="gallerypics/01.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">FHDS</div>
+            <img src="gallerypics/02.jpg" style="width:100%">
+             <div class="text">Caption Three</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">FHDS</div>
+            <img src="gallerypics/03.jpg" style="width:100%">
+             <div class="text">Caption Three</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">FHDS</div>
+            <img src="gallerypics/04.jpg" style="width:100%">
+             <div class="text">Caption Three</div>
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">FHDS</div>
+            <img src="gallerypics/06.jpg" style="width:100%">
+             <div class="text">Caption Three</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">FHDS</div>
+            <img src="gallerypics/07.jpg" style="width:100%">
+             <div class="text">Caption Three</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">FHDS</div>
+            <img src="gallerypics/08.jpg" style="width:100%">
+             <div class="text">Caption Three</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">FHDS</div>
+            <img src="gallerypics/09.jpg" style="width:100%">
+             <div class="text">Caption Three</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">FHDS</div>
+            <img src="gallerypics/10.jpg" style="width:100%">
+             <div class="text">Caption Three</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">FHDS</div>
+            <img src="gallerypics/11.jpg" style="width:100%">
+             <div class="text">Caption Three</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <!-- Java Script -->
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+    }
+</script>
+
+    
+</body>
+</html>
