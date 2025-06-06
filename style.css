@@ -36,6 +36,7 @@ body{
 
 #main-home{
     margin-top: 40px;
+    
 }
 /*=========BOTTOM-TABS===========*/
 
@@ -88,6 +89,9 @@ body{
 
 #fb {
   margin-top: 40px;
+  display: flex;
+ justify-content: center;
+
 }
 
 h3 {
