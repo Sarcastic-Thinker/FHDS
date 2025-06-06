@@ -4,6 +4,15 @@ body{
      font-family: Helvetica;
      background-color: aliceblue;
 }
+
+.bg {     
+    margin-top: 40px;
+    background-image: url(photos/gradient.jpeg);
+    background-position: 100%;
+    background-size: 100%;
+    margin-bottom: 40px;
+}
+
 /*===========TOP TABS========*/
 #tabs-top{
       position: fixed;
