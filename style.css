@@ -208,3 +208,15 @@ a.info-box{
       padding    : 10px;
       margin-bottom: 45px;
 }
+.contacts {
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      color: crimson;
+      font-weight: bolder;
+}
+.subhead {
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      color: crimson;
+      font-weight: bolder;
+}
